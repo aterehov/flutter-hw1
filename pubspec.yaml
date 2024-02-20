@@ -1,0 +1,40 @@
+name: todaynews
+description: Shows latest news for today
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  url_launcher: ^6.1.4
+  logging: ^1.0.2
+  flip_card: ^0.7.0
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  flutter_launcher_icons: ^0.9.3
+
+flutter:
+  generate: true
+  uses-material-design: true
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Light.ttf
+
+# run: flutter pub run flutter_launcher_icons:main
+flutter_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon.png"
